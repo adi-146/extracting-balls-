@@ -9,7 +9,7 @@ var ball,rope;
 var box1,box2,box3,box4,box5,box6,box7,box8,box9,box10,box11,box12,box13,box14,box15,box16,box17,box18,box19,box20;
 
 function setup(){
-    background (3000,800);
+    createCanvas (3000,800);
     
     engine=Engine.create();
     world=engine.world;
@@ -71,5 +71,5 @@ function draw(){
 }
 
 function mouseDragged(){
-    Matter.setPosition(ball.body,{mouseX,mouseY});
+    Matter.Body.setPosition(ball.body,{mouseX,mouseY});
 }
